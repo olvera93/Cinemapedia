@@ -28,7 +28,7 @@ class MoviedbDatasource extends MoviesDatasource {
     .map(
       (moviedb) => MovieMapper.movieDBToEntity(moviedb))
       .toList();
-    throw movies;
+    return movies;
   }
   
 }
